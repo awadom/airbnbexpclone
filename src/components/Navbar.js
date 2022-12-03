@@ -1,3 +1,7 @@
 export default function Navbar() {
-  return <h1>App component</h1>;
+  return (
+    <div className="navbar">
+      <img src="/images/airbnb-logo.png" alt="" />
+    </div>
+  );
 }
