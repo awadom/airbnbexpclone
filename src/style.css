@@ -15,16 +15,16 @@ body {
 .hero > h1 {
   margin-top: 0;
   margin-bottom: -10;
-  font-size: 2.37em;
-  font-weight: 600;
+  padding: 0 0 20 30px;
+  font-size: 1.9em;
+  font-weight: 500;
 }
-.hero > h1,
-p {
-  padding-left: 30px;
-}
+
 .hero > p {
+  padding: 0 0 50 30;
   font-weight: 200;
-  margin-right: 200;
+  font-size: 0.83em;
+  margin-right: 150;
 }
 .hero-img {
   display: flex;
@@ -38,13 +38,47 @@ p {
 .card {
   display: flex;
   flex-direction: column;
+  padding: 0 10 30 30;
 }
 .card-status-img {
-  background-image: url("/public/images/katie-zaferes.png");
-  width: 264px;
-  height: 353px;
+  display: flex;
+  position: relative;
+  width: 176px;
+  height: 235px;
 }
+.card-status {
+  position: absolute;
+  font-size: 10.24;
+  background-color: white;
+  border-radius: 4px;
+  margin: 5;
+  padding: 2 5 2 5;
+}
+
 .card-rating {
   display: flex;
-  border: 1px solid;
+  align-items: center;
+  height: 10;
+  margin: 10 0 8 0;
+}
+.card-rating > img {
+  width: 18;
+}
+.card-rating > img,
+p,
+p {
+  margin: 0;
+  padding: 2;
+  font-size: 12;
+  font-weight: 200;
+}
+.card-rating-amt-country {
+  color: gray;
+}
+.card-price {
+  display: flex;
+  align-items: center;
+}
+.card-price-cost {
+  font-weight: 500;
 }
