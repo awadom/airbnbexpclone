@@ -12,21 +12,21 @@ body {
   box-shadow: 0px 3px 7.46px rgba(128, 128, 128, 0.376); /* offset-x | offset-y | blur-radius | color */
 }
 
-.content > h1 {
+.hero > h1 {
   margin-top: 0;
   margin-bottom: -10;
   font-size: 2.37em;
   font-weight: 600;
 }
-.content > h1,
+.hero > h1,
 p {
   padding-left: 30px;
 }
-.content > p {
+.hero > p {
   font-weight: 200;
   margin-right: 200;
 }
-.content-img {
+.hero-img {
   display: flex;
   margin-left: auto;
   margin-right: auto;

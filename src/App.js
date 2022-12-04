@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar.js";
-import Content from "./components/Content.js";
+import Hero from "./components/Hero.js";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Content />
+      <Hero />
     </>
   );
 }
