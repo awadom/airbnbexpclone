@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar.js";
-import "./style.css";
+import Content from "./components/Content.js";
 
 export default function App() {
   return (
     <>
       <Navbar />
+      <Content />
     </>
   );
 }
