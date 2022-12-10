@@ -1,18 +1,20 @@
-export default function Card() {
+export default function Card(props) {
   return (
     <section className="card">
       <div className="card-status-img">
-        <div className="card-status">SOLD OUT</div>
-        <img className="card-img" src="./images/katie-zaferes.png" alt="" />
+        <div className="card-status">{props.status}</div>
+        <img className="card-img" src={`./images/${props.img}`} alt="" />
       </div>
       <div className="card-rating">
         <img src="./images/star.png" alt="" />
-        <p>5.0</p>
-        <p className="card-rating-amt-country">(6) · USA</p>
+        <p>{props.rating}</p>
+        <p className="card-rating-amt-country">
+          {props.reviewCount} · {props.country}
+        </p>
       </div>
-      <p>Life lessons with Katie Zaferes</p>
+      <p>{props.title}</p>
       <div className="card-price">
-        <p className="card-price-cost">From $136</p>
+        <p className="card-price-cost">From ${props.price}</p>
         <p>/ person</p>
       </div>
     </section>

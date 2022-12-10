@@ -26,10 +26,15 @@
    }
    My Answer:
    pass the props in the function:
-   function Navbar(props)....
+   function Navbar(props) {
+    return(
+      {props.name}
+    )
+   }
+
    Exempler:
 
 5. What data type is `props` when the component receives it?
    My Answer:
-   JS Object
+   Object
    Exempler:
