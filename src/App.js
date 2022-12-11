@@ -4,7 +4,7 @@ import Hero from "./components/Hero.js";
 import data from "./data.js";
 
 export default function App() {
-  const dataElements = data.map((userData) => {
+  const cards = data.map((userData) => {
     return (
       <Card
         id={userData.id}
@@ -24,7 +24,7 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-      <div>{dataElements}</div>
+      <section className="cards-list">{cards}</section>
     </>
   );
 }
