@@ -7,7 +7,7 @@ export default function App() {
   const cards = data.map((userData) => {
     return (
       <Card
-        id={userData.id}
+        key={userData.id}
         status={userData.status}
         title={userData.title}
         description={userData.description}

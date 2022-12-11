@@ -9,7 +9,7 @@ export default function Card(props) {
         <img src="./images/star.png" alt="" />
         <p>{props.rating}</p>
         <p className="card-rating-amt-country">
-          {`${props.reviewCount} • ${props.location}`}
+          {`(${props.reviewCount}) • ${props.location}`}
         </p>
       </div>
       <p>{props.title}</p>
